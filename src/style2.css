@@ -1,0 +1,40 @@
+body {
+    background-color:  burlywood
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+video {
+    border-radius: 11px;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: coral;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 1px 2px;
+    box-shadow: 8px 8px 11px rgba(0, 0, 0, .3);
+}
+
+button:hover { 
+    transform: scale(1.05);
+    box-shadow: 11px 11px 16px rgba(0, 0, 0, .4);
+}
+
+
+
+
