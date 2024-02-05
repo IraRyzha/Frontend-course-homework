@@ -55,7 +55,7 @@
             });
 
             videoPlayer.volumeInput.addEventListener('input', () => {
-                videoPlayer.changeVolume(volumeRange.value);
+                videoPlayer.changeVolume(videoPlayer.volumeInput.value);
             });
 
         }
