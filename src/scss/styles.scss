@@ -52,15 +52,14 @@ a {
     /* MAIN */
 
     .content-container {
-
-        align-items: start;
+        @include set-size(100%, 650px);
         article {
-            @include set-size(50%, 656px);
+            @include set-size(50%, 650px);
             padding: 160px 120px;
             align-items: start;
         }
         .background-img {
-            @include set-size(50%, 656px);
+            @include set-size(50%, 650px);
         }
         &:nth-child(1) .background-img {
             background-image: url(../images/desktop/image-transform.jpg);
@@ -102,7 +101,6 @@ a {
 }
 
 
-
 @media screen and (max-width: 1024px) {
 
     /* HEADER */
@@ -118,8 +116,7 @@ a {
                 display: none;
                 &.show-for-mobile {
                     position: absolute;
-                    @include flex-container(column);
-                    gap: 35px;
+                    @include flex-container(column, null, null, 35px);
                     background-color: rgb(236, 236, 236);
                     border-radius: 25px;
                     width: 70%;
@@ -163,8 +160,7 @@ a {
 
     .main-content .content-container {
         flex-direction: column;
-        align-items: center;
-
+        @include set-size(100%, auto);
         article {
             @include set-size(100%, auto);
             padding: 90px 70px;
@@ -362,7 +358,6 @@ main {
         @include set-size(100%, auto);
 
         .content-container {
-            @include set-size(100%, auto);
             display: flex;
 
             article {
@@ -459,8 +454,6 @@ main {
 
 
 
-
-
 /* CLIENT-TESTIMOMIALS */
 
 section.client-testimonials {
@@ -545,8 +538,6 @@ footer {
         }
     }
     .footer-list {
-        margin: 0;
-        padding: 0;
         list-style-type: none;
         display: flex;
         gap: 35px;
@@ -568,8 +559,6 @@ footer {
         }
     }
     .media-list {
-        margin: 0;
-        padding: 0;
         list-style-type: none;
         @include flex-container(null, null, null, 25px);
         li {
