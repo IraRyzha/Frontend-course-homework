@@ -58,14 +58,17 @@ a {
             padding: 160px 120px;
             align-items: start;
         }
-        .background-img {
-            @include set-size(50%, 650px);
-        }
-        &:nth-child(1) .background-img {
+        &:nth-child(1) {
             background-image: url(../images/desktop/image-transform.jpg);
+            background-size: 50% 100%;
+            background-position: right;
+            justify-content: flex-start;
         }
-        &:nth-child(2) .background-img {
+        &:nth-child(2) {
             background-image: url(../images/desktop/image-stand-out.jpg);
+            background-size: 50% 100%;
+            background-position: left;
+            justify-content: flex-end;
         }
         .text-description {
             @include set-size(50%, auto);
@@ -163,7 +166,7 @@ a {
         @include set-size(100%, auto);
         article {
             @include set-size(100%, auto);
-            padding: 90px 70px;
+            padding: 70px 50px;
             align-items: center;
             h2 {
                 text-align: center;
@@ -172,21 +175,21 @@ a {
                 text-align: center;
              }
         }
-        .background-img {
-            @include set-size(100%, auto);
-            height: 443px;
+        &:not(:last-child) {
+            height: 850px;
+            justify-content: flex-end;
         }
-        &:nth-child(1) .background-img {
+        &:nth-child(1) {
             background-image: url(../images/mobile/image-transform.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 45%;
+            background-position: top;
         }
-        &:nth-child(2) .background-img {
+        &:nth-child(2) {
             background-image: url(../images/mobile/image-stand-out.jpg);
-        }
-        &:first-child article {
-            order: 2;
-        }
-        &:first-child .background-img {
-            order: 1;
+            background-repeat: no-repeat;
+            background-size: 100% 45%;
+            background-position: top;
         }
 
         .text-description {
@@ -402,11 +405,6 @@ main {
                         transform: scale(1.03);
                     }
                 }
-            }
-            .background-img {
-                display: block;
-                background-size: cover;
-                background-position: center;
             }
             .text-description {
                 height: 641px;

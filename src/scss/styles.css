@@ -53,15 +53,17 @@ a {
     padding: 160px 120px;
     align-items: start;
   }
-  .content-container .background-img {
-    width: 50%;
-    height: 650px;
-  }
-  .content-container:nth-child(1) .background-img {
+  .content-container:nth-child(1) {
     background-image: url(../images/desktop/image-transform.jpg);
+    background-size: 50% 100%;
+    background-position: right;
+    justify-content: flex-start;
   }
-  .content-container:nth-child(2) .background-img {
+  .content-container:nth-child(2) {
     background-image: url(../images/desktop/image-stand-out.jpg);
+    background-size: 50% 100%;
+    background-position: left;
+    justify-content: flex-end;
   }
   .content-container .text-description {
     width: 50%;
@@ -149,7 +151,7 @@ a {
   .main-content .content-container article {
     width: 100%;
     height: auto;
-    padding: 90px 70px;
+    padding: 70px 50px;
     align-items: center;
   }
   .main-content .content-container article h2 {
@@ -158,22 +160,21 @@ a {
   .main-content .content-container article p {
     text-align: center;
   }
-  .main-content .content-container .background-img {
-    width: 100%;
-    height: auto;
-    height: 443px;
+  .main-content .content-container:not(:last-child) {
+    height: 850px;
+    justify-content: flex-end;
   }
-  .main-content .content-container:nth-child(1) .background-img {
+  .main-content .content-container:nth-child(1) {
     background-image: url(../images/mobile/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    background-position: top;
   }
-  .main-content .content-container:nth-child(2) .background-img {
+  .main-content .content-container:nth-child(2) {
     background-image: url(../images/mobile/image-stand-out.jpg);
-  }
-  .main-content .content-container:first-child article {
-    order: 2;
-  }
-  .main-content .content-container:first-child .background-img {
-    order: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 45%;
+    background-position: top;
   }
   .main-content .content-container .text-description {
     width: 100%;
@@ -381,11 +382,6 @@ main section.main-content .content-container article a:hover {
   animation: none;
   transform: scale(1.03);
 }
-main section.main-content .content-container .background-img {
-  display: block;
-  background-size: cover;
-  background-position: center;
-}
 main section.main-content .content-container .text-description {
   height: 641px;
   padding: 430px 0px 35px;
@@ -541,6 +537,4 @@ footer .media-list {
 }
 footer .media-list li img:hover {
   transform: scale(1.05);
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
