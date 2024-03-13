@@ -1,4 +1,4 @@
-@use 'config' as *; 
+@use 'config' as *;  
 
 * {
     box-sizing: border-box;
@@ -59,15 +59,11 @@ a {
             align-items: start;
         }
         &:nth-child(1) {
-            background-image: url(../images/desktop/image-transform.jpg);
-            background-size: 50% 100%;
-            background-position: right;
+            @include bgContainer('../images/desktop/image-transform.jpg', right, 50%, 100%);
             justify-content: flex-start;
         }
         &:nth-child(2) {
-            background-image: url(../images/desktop/image-stand-out.jpg);
-            background-size: 50% 100%;
-            background-position: left;
+            @include bgContainer('../images/desktop/image-stand-out.jpg', left, 50%, 100%);
             justify-content: flex-end;
         }
         .text-description {
@@ -181,15 +177,11 @@ a {
         }
         &:nth-child(1) {
             background-image: url(../images/mobile/image-transform.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 45%;
-            background-position: top;
+            @include bgContainer('../images/mobile/image-transform.jpg', top, 100%, 45%);
         }
         &:nth-child(2) {
             background-image: url(../images/mobile/image-stand-out.jpg);
-            background-repeat: no-repeat;
-            background-size: 100% 45%;
-            background-position: top;
+            @include bgContainer('../images/mobile/image-transform.jpg', top, 100%, 45%);
         }
 
         .text-description {

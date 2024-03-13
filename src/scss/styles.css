@@ -54,15 +54,17 @@ a {
     align-items: start;
   }
   .content-container:nth-child(1) {
-    background-image: url(../images/desktop/image-transform.jpg);
+    background-image: url("../images/desktop/image-transform.jpg");
     background-size: 50% 100%;
     background-position: right;
+    background-repeat: no-repeat;
     justify-content: flex-start;
   }
   .content-container:nth-child(2) {
-    background-image: url(../images/desktop/image-stand-out.jpg);
+    background-image: url("../images/desktop/image-stand-out.jpg");
     background-size: 50% 100%;
     background-position: left;
+    background-repeat: no-repeat;
     justify-content: flex-end;
   }
   .content-container .text-description {
@@ -166,15 +168,17 @@ a {
   }
   .main-content .content-container:nth-child(1) {
     background-image: url(../images/mobile/image-transform.jpg);
-    background-repeat: no-repeat;
+    background-image: url("../images/mobile/image-transform.jpg");
     background-size: 100% 45%;
     background-position: top;
+    background-repeat: no-repeat;
   }
   .main-content .content-container:nth-child(2) {
     background-image: url(../images/mobile/image-stand-out.jpg);
-    background-repeat: no-repeat;
+    background-image: url("../images/mobile/image-transform.jpg");
     background-size: 100% 45%;
     background-position: top;
+    background-repeat: no-repeat;
   }
   .main-content .content-container .text-description {
     width: 100%;
@@ -537,4 +541,6 @@ footer .media-list {
 }
 footer .media-list li img:hover {
   transform: scale(1.05);
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
