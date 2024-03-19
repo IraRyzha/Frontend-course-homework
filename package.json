@@ -1,0 +1,15 @@
+{
+  "name": "frontend-course-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "parcel index.html",
+    "compile": "sass --watch ./src/scss/styles.scss ./src/scss/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.71.1"
+  }
+}

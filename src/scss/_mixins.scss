@@ -1,0 +1,27 @@
+@mixin set-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex-container($direction: null, $justify: null, $align: null, $gap: null) {
+    display: flex;
+    @if $direction != null {
+        flex-direction: $direction;
+    }
+    @if $justify != null {
+        justify-content: $justify;
+    }
+    @if $direction != null {
+        align-items: $align;
+    }
+    @if $gap != null {
+        gap: $gap;
+    }
+}
+
+@mixin bgContainer($url, $position, $width, $heigth){
+    background-image: url($url);
+    background-size: $width $heigth;
+    background-position: $position;
+    background-repeat: no-repeat;
+}
