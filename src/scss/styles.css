@@ -167,15 +167,13 @@ a {
     justify-content: flex-end;
   }
   .main-content .content-container:nth-child(1) {
-    background-image: url(../images/mobile/image-transform.jpg);
     background-image: url("../images/mobile/image-transform.jpg");
     background-size: 100% 45%;
     background-position: top;
     background-repeat: no-repeat;
   }
   .main-content .content-container:nth-child(2) {
-    background-image: url(../images/mobile/image-stand-out.jpg);
-    background-image: url("../images/mobile/image-transform.jpg");
+    background-image: url("../images/mobile/image-stand-out.jpg");
     background-size: 100% 45%;
     background-position: top;
     background-repeat: no-repeat;

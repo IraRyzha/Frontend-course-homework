@@ -176,12 +176,10 @@ a {
             justify-content: flex-end;
         }
         &:nth-child(1) {
-            background-image: url(../images/mobile/image-transform.jpg);
             @include bgContainer('../images/mobile/image-transform.jpg', top, 100%, 45%);
         }
         &:nth-child(2) {
-            background-image: url(../images/mobile/image-stand-out.jpg);
-            @include bgContainer('../images/mobile/image-transform.jpg', top, 100%, 45%);
+            @include bgContainer('../images/mobile/image-stand-out.jpg', top, 100%, 45%);
         }
 
         .text-description {
